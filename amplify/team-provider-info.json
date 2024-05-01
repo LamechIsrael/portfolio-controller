@@ -1,0 +1,26 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify70ea77e357d24-staging-7d81c-authRole",
+      "UnauthRoleArn": "arn:aws:iam::912660374961:role/amplify-amplify70ea77e357d24-staging-7d81c-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::912660374961:role/amplify-amplify70ea77e357d24-staging-7d81c-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplify70ea77e357d24-staging-7d81c-deployment",
+      "UnauthRoleName": "amplify-amplify70ea77e357d24-staging-7d81c-unauthRole",
+      "StackName": "amplify-amplify70ea77e357d24-staging-7d81c",
+      "StackId": "arn:aws:cloudformation:us-east-1:912660374961:stack/amplify-amplify70ea77e357d24-staging-7d81c/48696730-037c-11ef-9537-0affe2cf5559",
+      "AmplifyAppId": "d3f5d05i7d46zk"
+    },
+    "categories": {
+      "storage": {
+        "portfoliocontrollerd79cb076": {
+          "bucketName": "lamech-portfolio-pictures",
+          "region": "us-east-1"
+        }
+      },
+      "auth": {
+        "portfoliocontroller": {}
+      }
+    }
+  }
+}
