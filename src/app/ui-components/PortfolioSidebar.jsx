@@ -19,6 +19,10 @@ export default function PortfolioSidebar(props) {
     type: "url",
     url: "https://github.com/lamechisrael",
   });
+  const imageOnClick = useNavigateAction({
+    type: "url",
+    url: "https://www.linkedin.com/in/lamechisrael/",
+  });
   return (
     <View
       width="386px"
@@ -89,7 +93,7 @@ export default function PortfolioSidebar(props) {
             borderRadius="5px"
             padding="0px 0px 0px 0px"
             objectFit="cover"
-            src="s3://lamech-portfolio-pictures/profile-and-contact-images/LinkedIn_logo.png"
+            src="https://lamech-portfolio-pictures.s3.amazonaws.com/profile-and-contact-images/LinkedIn_logo.png"
             onClick={() => {
               linkedInButtonOnClick();
             }}
@@ -727,6 +731,10 @@ export default function PortfolioSidebar(props) {
           borderRadius="160px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
+          src="https://media.licdn.com/dms/image/D5635AQFGnt9ntU8uWw/profile-framedphoto-shrink_200_200/0/1690905342855?e=1715202000&v=beta&t=ZbO88fAtdfgCxvDWWksF75mA-UBcUgd5OV00DCY4Y5s"
+          onClick={() => {
+            imageOnClick();
+          }}
           {...getOverrideProps(overrides, "image")}
         ></Image>
       </View>
