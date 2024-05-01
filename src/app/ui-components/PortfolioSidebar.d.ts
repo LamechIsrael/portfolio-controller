@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -20,7 +20,6 @@ export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes
 export declare type PortfolioSidebarOverridesProps = {
     PortfolioSidebar?: PrimitiveOverrideProps<ViewProps>;
     "Frame 437"?: PrimitiveOverrideProps<ViewProps>;
-    ProfilePicture?: PrimitiveOverrideProps<IconProps>;
     "Frame 438"?: PrimitiveOverrideProps<ViewProps>;
     "Contact Buttons"?: PrimitiveOverrideProps<ViewProps>;
     LinkedInButton?: PrimitiveOverrideProps<ImageProps>;
@@ -59,6 +58,7 @@ export declare type PortfolioSidebarOverridesProps = {
     JavaLogo?: PrimitiveOverrideProps<ImageProps>;
     SpringBootLogo?: PrimitiveOverrideProps<ImageProps>;
     "Programming Skills:"?: PrimitiveOverrideProps<TextProps>;
+    image?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type PortfolioSidebarProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: PortfolioSidebarOverridesProps | undefined | null;

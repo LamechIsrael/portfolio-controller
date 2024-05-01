@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { FlexProps, TextProps } from "@aws-amplify/ui-react";
+import { FlexProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -18,13 +18,13 @@ export declare type Variant = {
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type PortfolioNavBarHeaderOverridesProps = {
-    PortfolioNavBarHeader?: PrimitiveOverrideProps<FlexProps>;
+    PortfolioNavBarHeader?: PrimitiveOverrideProps<ViewProps>;
     "Frame 321"?: PrimitiveOverrideProps<FlexProps>;
     Home?: PrimitiveOverrideProps<TextProps>;
     Portfolio?: PrimitiveOverrideProps<TextProps>;
     HireMeForFreelance?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
-export declare type PortfolioNavBarHeaderProps = React.PropsWithChildren<Partial<FlexProps> & {
+export declare type PortfolioNavBarHeaderProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: PortfolioNavBarHeaderOverridesProps | undefined | null;
 }>;
 export default function PortfolioNavBarHeader(props: PortfolioNavBarHeaderProps): React.ReactElement;

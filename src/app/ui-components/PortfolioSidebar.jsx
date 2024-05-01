@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps, useNavigateAction } from "./utils";
-import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
+import { Image, Text, View } from "@aws-amplify/ui-react";
 export default function PortfolioSidebar(props) {
   const { overrides, ...rest } = props;
   const linkedInButtonOnClick = useNavigateAction({
@@ -48,26 +48,6 @@ export default function PortfolioSidebar(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 437")}
       >
-        <Icon
-          width="158px"
-          height="159px"
-          viewBox={{ minX: 0, minY: 0, width: 158, height: 159 }}
-          paths={[
-            {
-              d: "M158 79.5C158 123.407 122.63 159 79 159C35.3695 159 0 123.407 0 79.5C0 35.5934 35.3695 0 79 0C122.63 0 158 35.5934 158 79.5Z",
-              fillRule: "nonzero",
-            },
-          ]}
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="0px"
-          left="116px"
-          src="s3://lamech-portfolio-pictures/profile-and-contact-images/Profile Picture.jpeg"
-          {...getOverrideProps(overrides, "ProfilePicture")}
-        ></Icon>
         <View
           width="367px"
           height="47px"
@@ -734,6 +714,21 @@ export default function PortfolioSidebar(props) {
             {...getOverrideProps(overrides, "Programming Skills:")}
           ></Text>
         </View>
+        <Image
+          width="164px"
+          height="159px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="0px"
+          left="111px"
+          borderRadius="160px"
+          padding="0px 0px 0px 0px"
+          objectFit="cover"
+          {...getOverrideProps(overrides, "image")}
+        ></Image>
       </View>
     </View>
   );

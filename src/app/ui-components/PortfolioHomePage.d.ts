@@ -25,7 +25,7 @@ export declare type PortfolioHomePageOverridesProps = {
     main?: PrimitiveOverrideProps<FlexProps>;
     "Frame 4381"?: PrimitiveOverrideProps<ViewProps>;
     PortfolioSidebar?: PortfolioSidebarProps;
-    "Frame 4373"?: PrimitiveOverrideProps<FlexProps>;
+    WebWindow?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
 export declare type PortfolioHomePageProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: PortfolioHomePageOverridesProps | undefined | null;

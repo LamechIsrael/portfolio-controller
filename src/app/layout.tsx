@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 import { Amplify } from "aws-amplify";
 import awsconfig from "./aws-exports";
 import "@aws-amplify/ui-react/styles.css";
+import AmplifyLayout from "../../layout/AmplifyLayout";
 Amplify.configure(awsconfig);
 
 export const metadata: Metadata = {
@@ -21,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AmplifyLayout>{children}</AmplifyLayout>
+      </body>
     </html>
   );
 }

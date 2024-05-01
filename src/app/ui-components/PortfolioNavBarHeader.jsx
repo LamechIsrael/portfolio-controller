@@ -7,20 +7,20 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Flex, Text } from "@aws-amplify/ui-react";
+import { Flex, Text, View } from "@aws-amplify/ui-react";
 export default function PortfolioNavBarHeader(props) {
   const { overrides, ...rest } = props;
   return (
-    <Flex
-      gap="40px"
-      direction="row"
+    <View
       width="1440px"
-      height="unset"
-      justifyContent="center"
-      alignItems="center"
+      height="72px"
+      display="block"
+      gap="unset"
+      alignItems="unset"
+      justifyContent="unset"
       position="relative"
       boxShadow="0px 2px 6px rgba(0.05098039284348488, 0.10196078568696976, 0.14901961386203766, 0.15000000596046448)"
-      padding="24px 32px 24px 32px"
+      padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
       {...getOverrideProps(overrides, "PortfolioNavBarHeader")}
       {...rest}
@@ -28,14 +28,13 @@ export default function PortfolioNavBarHeader(props) {
       <Flex
         gap="40px"
         direction="row"
-        width="unset"
+        width="1376px"
         height="unset"
         justifyContent="flex-start"
         alignItems="center"
-        grow="1"
-        shrink="1"
-        basis="0"
-        position="relative"
+        position="absolute"
+        top="24px"
+        left="32px"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 321")}
       >
@@ -103,6 +102,6 @@ export default function PortfolioNavBarHeader(props) {
           {...getOverrideProps(overrides, "HireMeForFreelance")}
         ></Text>
       </Flex>
-    </Flex>
+    </View>
   );
 }

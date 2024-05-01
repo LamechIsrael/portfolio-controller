@@ -1,13 +1,9 @@
-"use client";
-
 import Image from "next/image";
 import styles from "./page.module.css";
-import { PortfolioHomePage } from "./ui-components";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <PortfolioHomePage />
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
