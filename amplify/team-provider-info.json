@@ -16,7 +16,8 @@
         "portfoliocontrollerd79cb076": {
           "bucketName": "lamech-portfolio-pictures",
           "region": "us-east-1"
-        }
+        },
+        "s3lamechportfoliopictures2": {}
       },
       "auth": {
         "portfoliocontroller": {}

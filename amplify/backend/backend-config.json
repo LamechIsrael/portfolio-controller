@@ -49,11 +49,10 @@
     }
   },
   "storage": {
-    "portfoliocontrollerd79cb076": {
+    "s3lamechportfoliopictures2": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
-      "service": "S3",
-      "serviceType": "imported"
+      "service": "S3"
     }
   }
 }
